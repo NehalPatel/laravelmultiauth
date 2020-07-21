@@ -78,20 +78,20 @@
 
                             <!--begin::Action-->
                             <div class="kt-login__actions">
-                                @if (Route::has('password.request'))
-                                <a href="{{ route('password.request') }}" class="kt-link kt-login__link-forgot">
-                                    Forgot Password ?
-                                </a>
-                                @endif
+                                <label class="kt-checkbox">
+                                    <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember me') }}
+                                    <span></span>
+                                </label>
                                 <button type="submit" id="kt_login_signin_submit" class="btn btn-primary btn-elevate kt-login__btn-primary">Sign In</button>
                             </div>
 
                             <div class="row kt-login__extra">
                                 <div class="col">
-                                    <label class="kt-checkbox">
-                                        <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember me') }}
-                                        <span></span>
-                                    </label>
+                                    @if (Route::has('password.request'))
+                                    <a href="{{ route('password.request') }}" class="kt-link kt-login__link-forgot">
+                                        Forgot Password ?
+                                    </a>
+                                    @endif
                                 </div>
                             </div>
 
