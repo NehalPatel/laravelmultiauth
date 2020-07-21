@@ -49,7 +49,7 @@
                                 @endif
                             </div>
                             <div class="kt-login__actions">
-                                <button id="kt_login_signin_submit" class="btn btn-brand btn-elevate kt-login__btn-primary">{{ __('Sign In') }}</button>
+                                <button type="submit" id="kt_login_signin_submit" class="btn btn-brand btn-elevate kt-login__btn-primary">{{ __('Sign In') }}</button>
                             </div>
                         </form>
                     </div>
