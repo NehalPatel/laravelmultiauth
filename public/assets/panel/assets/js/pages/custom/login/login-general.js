@@ -97,7 +97,7 @@ var KTLoginGeneral = function() {
             form.ajaxSubmit({
                 url: '',
                 success: function(response, status, xhr, $form) {
-                	// similate 2s delay
+                    // similate 2s delay
                 	setTimeout(function() {
 	                    btn.removeClass('kt-spinner kt-spinner--right kt-spinner--sm kt-spinner--light').attr('disabled', false);
 	                    showErrorMsg(form, 'danger', 'Incorrect username or password. Please try again.');

@@ -38,7 +38,4 @@
 
     <!--end::Global Theme Bundle -->
 
-    <!--begin::Page Scripts(used by this page) -->
-    <script src="{{ config('panel.paths.assets') }}/js/pages/custom/login/login-general.js" type="text/javascript"></script>
-
     <!--end::Page Scripts -->
